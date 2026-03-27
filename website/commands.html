@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Devil Bot – Commands</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="commands-page">
+  <header class="nav glass container">
+    <div class="logo">devil<span>bot</span></div>
+    <div class="nav-links">
+      <a href="index.html#features">Home</a>
+      <a href="commands.html" class="active">Commands</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <div class="cta">
+      <a class="btn ghost" href="https://discord.gg" target="_blank" rel="noreferrer">Docs</a>
+      <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1486876680264880378&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noreferrer">Add to Discord</a>
+    </div>
+  </header>
+
+  <main class="cmd-page-wrap container">
+    <section class="cmd-hero">
+      <div>
+        <h1>Commands</h1>
+        <p class="lede">View all commands in devilbot across moderation and Devil Cash.</p>
+      </div>
+      <div class="cmd-actions">
+        <div class="pill">All Categories</div>
+        <div class="pill muted">Prefix: .</div>
+      </div>
+    </section>
+
+    <section class="cmd-search">
+      <input id="cmd-search" type="text" placeholder="Search commands, descriptions, or aliases..." />
+    </section>
+
+    <section class="cmd-list-full">
+      <h3 class="cmd-section">Moderation</h3>
+      <div class="cmd-grid-full" data-section="moderation">
+        <div class="cmd-card">
+          <div class="cmd-title">/ban</div>
+          <p>Ban a member with optional history delete.</p>
+          <div class="args">Arguments: &lt;user&gt; [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/kick</div>
+          <p>Kick a member with reason.</p>
+          <div class="args">Arguments: &lt;member&gt; [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/softban</div>
+          <p>Ban then unban to clear messages.</p>
+          <div class="args">Arguments: &lt;member&gt; [history] [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/massban</div>
+          <p>Ban multiple IDs/mentions at once.</p>
+          <div class="args">Arguments: &lt;users&gt; [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unbanall</div>
+          <p>Unban every banned user.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/mute</div>
+          <p>Timeout a member.</p>
+          <div class="args">Arguments: &lt;member&gt; [minutes]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unmute</div>
+          <p>Remove timeout from a member.</p>
+          <div class="args">Arguments: &lt;member&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/reactionmute</div>
+          <p>Block reactions in a channel.</p>
+          <div class="args">Arguments: &lt;member&gt; &lt;channel&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unreactionmute</div>
+          <p>Allow reactions again.</p>
+          <div class="args">Arguments: &lt;member&gt; &lt;channel&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/lock / /unlock</div>
+          <p>Lock/unlock the current channel.</p>
+          <div class="args">Arguments: [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unlockdown / /unlockdownall</div>
+          <p>Unlock specific or all text channels.</p>
+          <div class="args">Arguments: &lt;channel&gt; [reason] / none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/bc</div>
+          <p>Clear bot messages in the channel.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/purge</div>
+          <p>Delete up to 500 recent messages.</p>
+          <div class="args">Arguments: &lt;count&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/history</div>
+          <p>Show warns and Devil Cash for a user.</p>
+          <div class="args">Arguments: &lt;user&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/forcenickname</div>
+          <p>Set or clear a member’s nickname.</p>
+          <div class="args">Arguments: &lt;member&gt; [nickname]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/role / /r</div>
+          <p>Add/remove/toggle roles quickly.</p>
+          <div class="args">Arguments: &lt;user&gt; &lt;role&gt; [add|remove|toggle]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/picperms</div>
+          <p>Toggle attachments for a user in a channel.</p>
+          <div class="args">Arguments: &lt;channel&gt; &lt;user&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/newusers</div>
+          <p>List newest members.</p>
+          <div class="args">Arguments: [amount]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/setnotifications</div>
+          <p>Set server default notifications.</p>
+          <div class="args">Arguments: &lt;option&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unlock</div>
+          <p>Unlock the current channel.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unlockdown</div>
+          <p>Unlock a specific channel.</p>
+          <div class="args">Arguments: &lt;channel&gt; [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/unlockdownall</div>
+          <p>Unlock all text/announcement channels.</p>
+          <div class="args">Arguments: [reason]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/bc</div>
+          <p>Clear bot messages in the channel.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/role</div>
+          <p>Add or remove a role from a user.</p>
+          <div class="args">Arguments: &lt;user&gt; &lt;role&gt; [add|remove]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/r</div>
+          <p>Alias for /role (same arguments).</p>
+          <div class="args">Arguments: &lt;user&gt; &lt;role&gt; [add|remove]</div>
+        </div>
+      </div>
+
+      <h3 class="cmd-section">Antinuke</h3>
+      <div class="cmd-grid-full" data-section="antinuke">
+        <div class="cmd-card">
+          <div class="cmd-title">/antinuke enable/disable</div>
+          <p>Toggle anti-nuke protection.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/antinuke status</div>
+          <p>Show anti-nuke status, whitelist, and limits.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/antinuke whitelist</div>
+          <p>Manage whitelist (add/remove/list).</p>
+          <div class="args">Arguments: action, [user]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/antinuke limits</div>
+          <p>Set ban/kick/channel delete thresholds.</p>
+          <div class="args">Arguments: [ban] [kick] [channel]</div>
+        </div>
+      </div>
+
+      <h3 class="cmd-section">Devil Cash</h3>
+      <div class="cmd-grid-full" data-section="devilcash">
+        <div class="cmd-card">
+          <div class="cmd-title">/devildaily</div>
+          <p>Claim daily Devil Cash (24h cooldown).</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilhunt</div>
+          <p>Harvest DC with a chance of bonus.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilpray</div>
+          <p>Gain or lose DC at random.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilcurse</div>
+          <p>Steal DC from another user.</p>
+          <div class="args">Arguments: &lt;target&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilbalance</div>
+          <p>Check your DC balance.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilgamble</div>
+          <p>Coinflip (heads/tails) for DC.</p>
+          <div class="args">Arguments: &lt;amount&gt; &lt;heads|tails&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilblackjack</div>
+          <p>Interactive blackjack with hit/stand.</p>
+          <div class="args">Arguments: &lt;bet&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/devilbj</div>
+          <p>Alias for /devilblackjack.</p>
+          <div class="args">Arguments: &lt;bet&gt;</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/help</div>
+          <p>List bot help and support info.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+      </div>
+
+      <h3 class="cmd-section">Utility</h3>
+      <div class="cmd-grid-full" data-section="utility">
+        <div class="cmd-card">
+          <div class="cmd-title">/ping</div>
+          <p>Check bot latency.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/uptime</div>
+          <p>Show how long the bot has been running.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/avatar</div>
+          <p>Show a user’s avatar.</p>
+          <div class="args">Arguments: [user]</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/serverinfo</div>
+          <p>Summary of the server.</p>
+          <div class="args">Arguments: none</div>
+        </div>
+        <div class="cmd-card">
+          <div class="cmd-title">/userinfo</div>
+          <p>Details about a user.</p>
+          <div class="args">Arguments: [user]</div>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:12px;">Prefix equivalents exist for most commands (e.g., <code>.bc</code>, <code>.r</code>, <code>.devildaily</code>, <code>.devilbj</code>).</p>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const search = document.getElementById('cmd-search');
+      const cards = Array.from(document.querySelectorAll('.cmd-card'));
+      if (!search) return;
+      search.addEventListener('input', () => {
+        const q = search.value.trim().toLowerCase();
+        cards.forEach(card => {
+          const text = card.innerText.toLowerCase();
+          card.style.display = text.includes(q) ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+
+  <footer class="footer">
+    <div>devilbot © 2026</div>
+    <div class="footer-links">
+      <a href="index.html#faq">FAQ</a>
+      <a href="mailto:you@example.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

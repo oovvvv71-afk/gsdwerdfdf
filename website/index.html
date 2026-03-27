@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Devil Bot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav glass container">
+    <div class="logo">devil<span>bot</span></div>
+    <div class="nav-links">
+      <a href="#features">Home</a>
+      <a href="commands.html">Commands</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="cta">
+      <a class="btn ghost" href="https://discord.gg" target="_blank" rel="noreferrer">Docs</a>
+      <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1486876680264880378&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noreferrer">Add to Discord</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="copy">
+        <h1>Devil Bot</h1>
+        <p class="lede">Sharp moderation, playful economy. Your server’s guardian and casino in one.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1486876680264880378&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noreferrer">Add to Discord</a>
+          <a class="btn ghost" href="commands.html">View Commands</a>
+        </div>
+      </div>
+      <div class="avatar-frame">
+        <img src="panda.jpg" alt="Bot avatar">
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <div class="feature">
+        <div class="badge">Moderation</div>
+        <h3>One‑touch cleanup</h3>
+        <p>Mass ban, soft ban, bot cleanup, reaction mutes, lockdowns, and role toggles with audit‑friendly responses.</p>
+      </div>
+      <div class="feature">
+        <div class="badge alt">Economy</div>
+        <h3>Devil Cash mini‑games</h3>
+        <p>Daily rewards, blackjack, coinflip, curses, and a 1M key redeem to kickstart your community events.</p>
+      </div>
+      <div class="feature">
+        <div class="badge">Safety</div>
+        <h3>Permission aware</h3>
+        <p>Commands respect Discord role hierarchy and only execute with the right Manage/Ban/Kick/Messages scopes.</p>
+      </div>
+    </section>
+
+    <!-- Command highlights removed -->
+
+    <section id="faq" class="faq container">
+      <h2>FAQ</h2>
+      <div class="qa">
+        <h4>How do I invite the bot?</h4>
+        <p>Click “Add to Discord” or use this link:<br><a href="https://discord.com/oauth2/authorize?client_id=1486876680264880378&permissions=8&integration_type=0&scope=bot">Invite Devil Bot</a>.</p>
+      </div>
+      <div class="qa">
+        <h4>What permissions are required?</h4>
+        <p>For most features, invite with Administrator. To be granular: moderation needs Manage Roles/Messages/Kick/Ban; antinuke needs Manage Guild; prefix commands need Message Content.</p>
+      </div>
+      <div class="qa">
+        <h4>How do I register commands faster?</h4>
+        <p>Add the bot to your server and commands appear almost instantly if registered per-guild. Global registration can take up to an hour across Discord.</p>
+      </div>
+      <div class="qa">
+        <h4>How do I clear global commands?</h4>
+        <p>Re-register the bot’s commands for your server; they’ll replace old global ones after propagation.</p>
+      </div>
+      <div class="qa">
+        <h4>Where are balances stored?</h4>
+        <p>Balances and daily cooldowns persist on the bot’s host; they survive restarts but back up before moving hosts.</p>
+      </div>
+      <div class="qa">
+        <h4>How do I configure antinuke?</h4>
+        <p>Turn it on with /antinuke enable, whitelist trusted users/bots with /antinuke whitelist, and set thresholds with /antinuke limits.</p>
+      </div>
+      <div class="qa">
+        <h4>Can I change the prefix?</h4>
+        <p>Prefix is <code>.</code> by default; prefix and slash commands both work side by side.</p>
+      </div>
+    </section>
+
+    <section class="features-extra container">
+      <h2>Additional Features</h2>
+      <p class="muted">Discover more tools to enhance your server.</p>
+      <div class="extra-grid">
+        <div class="extra-card">
+          <div class="extra-title">Repliers</div>
+          <p>Automatic responses to keywords and phrases.</p>
+        </div>
+        <div class="extra-card">
+          <div class="extra-title">Giveaways</div>
+          <p>Run engaging giveaways with custom requirements.</p>
+        </div>
+        <div class="extra-card">
+          <div class="extra-title">Levels</div>
+          <p>XP system with customizable rewards and roles.</p>
+        </div>
+        <div class="extra-card">
+          <div class="extra-title">Economy</div>
+          <p>Virtual currency with games and trading.</p>
+        </div>
+        <div class="extra-card">
+          <div class="extra-title">Reaction Triggers</div>
+          <p>Custom actions triggered by emoji reactions.</p>
+        </div>
+        <div class="extra-card">
+          <div class="extra-title">Media Commands</div>
+          <p>Image manipulation and generation tools.</p>
+        </div>
+      </div>
+      <p class="muted center">... and many more features</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>devilbot © 2026</div>
+    <div class="footer-links">
+      <a href="https://github.com">Source</a>
+      <a href="mailto:you@example.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
